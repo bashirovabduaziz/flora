@@ -1,0 +1,65 @@
+.hero{
+    &__container{
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        background-color:#EFF8FF ;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+    &__image{
+        width: 1000px;
+    }
+   
+   &__box{
+    width: 800px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(8px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+justify-content: space-around;
+z-index: 1 !important;
+position: absolute;
+left: 100px;
+bottom: 70px;
+}
+   &__image{
+       width: 800px;
+       position: absolute;
+       right: 1px;
+       top: -23px;
+    }
+    &__title{
+        font-family: 'Syne';
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 70px;
+/* or 133% */
+color: #16100D;
+width: 500px;
+position: absolute;
+top: 20px;
+left: 100px;
+    }
+    &__text{
+        font-family: 'Syne';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 34px;
+/* or 155% */
+
+
+color: rgba(22, 16, 13, 0.5);
+z-index: 1;
+width: 533px;
+position: absolute;
+left: 100px;
+top: 188px;
+    }
+}
